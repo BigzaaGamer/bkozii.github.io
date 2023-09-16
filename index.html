@@ -34,44 +34,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar">
                 <a class="navbar-item">
-                    Home
+                    งานสัปดาห์วิทยาศาสตร์
                 </a>
 
                 <a class="navbar-item">
-                    Documentation
+                    ข้อมูลส่วนตัว
                 </a>
 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="navbar-item">Discord</div>
-            <div class="navbar-item"><img
-                    src="https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png">GitHub</div>
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <span id="websiteDesc">รวมรูปบรรยากาศ งานสัปดาห์วิทยาศาสตร์</span>
-                </div>
-            </div>
 
         </div>
     </nav>
@@ -255,6 +224,27 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     });
     // new Splide('#image-carousel').mount();
 
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+    });
 
 </script>
 

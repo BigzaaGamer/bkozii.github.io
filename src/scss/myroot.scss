@@ -35,17 +35,19 @@ $white: #000000;
 @import "../../src/scss/base/_all.sass";
 // @import "../../src/scss/elements/button.sass";
 @import "../../src/scss/elements/container.sass";
+@import "../../src/scss/elements/content.sass";
 @import "../../src/scss/elements/title.sass";
+@import "../../src/scss/elements/table.sass";
 @import "../../src/scss/components/card.sass";
 @import "../../src/scss/components/navbar.sass";
 // @import "../../src/scss/components/level.sass";
 @import "../../src/scss/layout/_all.sass";
 @import "../../src/scss/helpers/_all.sass";
-@import "../../src/scss/grid/columns.sass";
+@import "../../src/scss/grid/_all.sass";
 
 html{background-image: url('https://wallpapers.com/images/hd/4d-ultra-hd-red-gradient-blobs-lq4203zqlhouj1ix.jpg');background-size: cover; background-repeat: no-repeat; background-attachment: fixed};
 // .hero{backdrop-filter: blur(5px);}
-// .card{background-color: $has;}
+// .card{background-color: $has;} 
 // .realContainer{backdrop-filter: blur(25px);background-color: #000000aa;}
 .realContainer{background-color: #000000aa;}
 div.card{background-color: #ffffff13; box-shadow: none; border-radius: 10px;}
@@ -74,6 +76,8 @@ section.hero{background-color: #000000aa; backdrop-filter: blur(20px);}
     transition: width 800ms ease;
     width: 0;
   }
+div.content .title{color:white;}
 nav.navbar img{margin: 5px; width: 25px;}
 hr{border: unset; height: 2px;}
 .link.is-info{color:$black}
+table.table tr th {color:white;}
