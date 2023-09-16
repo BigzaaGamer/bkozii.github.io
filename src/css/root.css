@@ -6254,3 +6254,7 @@ hr {
 table.table tr th {
   color: white;
 }
+
+div#currentPageNavbar {
+  border-radius: 5px;
+}
